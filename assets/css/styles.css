@@ -596,7 +596,7 @@ img {
         margin-top: 20px;
     }
 
-    .video {
+    video {
 width: 360px;
 height: 280px;
     }
@@ -611,7 +611,7 @@ height: 280px;
 }
 
 
-.video {
+video {
 width: 420px;
 height: 340px;
 }

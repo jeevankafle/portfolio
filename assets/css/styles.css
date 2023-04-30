@@ -596,6 +596,11 @@ img {
         margin-top: 20px;
     }
 
+    .video {
+width: 360px;
+height: 280px;
+    }
+
 }
 
 /* Buttons */
@@ -603,4 +608,10 @@ img {
   display: flex;
   gap:15px;
   /* flex-direction: row; */
+}
+
+
+.video {
+width: 420px;
+height: 340px;
 }

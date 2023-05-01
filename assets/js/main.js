@@ -63,4 +63,8 @@ function submitForm(){
         alert('All fields are required');
         event.preventDefault();
     }
+    else{
+        alert('Successfully submitted');
+        
+    }
 }

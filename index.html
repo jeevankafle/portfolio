@@ -3,325 +3,140 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="assets/css/styles.css" />
-
-    <!-- =====BOX ICONS===== -->
-    <link
-      href="https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css"
-      rel="stylesheet"
-    />
-    <title>Jeevan Kafle</title>
+  
+    <title>Jeevan Kafle | Data Scientist • Philosopher • Thinker</title>
+    <meta name="description"
+          content="Official site of Jeevan Kafle – Data Scientist, Thinker and Philosopher exploring AI, neuroscience and meaning." />
+    <meta name="keywords"
+          content="Jeevan Kafle, AI, Data Science, Machine Learning, Philosophy, Neuroscience, Jordan Peterson" />
+    <meta name="author" content="Jeevan Kafle" />
+  
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Jeevan Kafle | AI • Philosophy • Meaning" />
+    <meta property="og:description"
+          content="Exploring the intersection of Artificial Intelligence and Human Meaning." />
+    <meta property="og:image" content="https://jeevankafle.com.np/assets/img/profile.jpg" />
+    <meta property="og:url" content="https://jeevankafle.com.np/" />
+  
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Jeevan Kafle | AI • Philosophy • Meaning" />
+    <meta name="twitter:description"
+          content="Exploring AI, data and philosophy to understand human consciousness." />
+    <meta name="twitter:image" content="https://jeevankafle.com.np/assets/img/profile.jpg" />
+  
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="assets/img/favicon.png" />
+  
+    <!-- Fonts + CSS -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/styles.css">
   </head>
-  <body>
-    <!--===== HEADER =====-->
-    <header class="l-header">
-      <nav class="nav bd-grid">
-        <div>
-          <a href="./index.html" class="nav__logo">Jeevan</a>
+  
+<body>
+  <div id="loader">
+    <h2>Loading Consciousness<span class="dots"></span></h2>
+  </div>
+  <!-- Background animation -->
+  <div id="particles"></div>
+
+  <!-- Header -->
+  <header class="header">
+    <div class="container nav">
+      <a href="#home" class="logo">JEEVAN KAFLE</a>
+      <ul class="menu">
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <button id="theme-toggle" aria-label="Toggle theme">☀️</button>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section id="home" class="hero">
+    <div class="symbol"></div>
+    <div class="hero-content">
+      <h1 class="title">Jeevan Kafle</h1>
+      <h3 class="subtitle">Data Scientist • Philosopher • Storyteller</h3>
+      <p class="quote">
+        “Artificial Intelligence is not replacing us — it’s revealing what we’ve forgotten about being human.”
+      </p>
+      <a href="#contact" class="btn">Connect</a>
+    </div>
+  </section>  
+
+  <!-- About -->
+  <section id="about" class="section">
+    <div class="container">
+      <h2 class="section-title">About</h2>
+      <p>
+        I explore the intersection of <b>AI, neuroscience, and philosophy</b> — decoding how intelligence emerges,
+        why meaning matters, and how data can mirror consciousness.  
+        My journey moves between code and contemplation, numbers and narratives.
+      </p>
+    </div>
+  </section>
+
+  <!-- Skills -->
+  <section id="skills" class="section">
+    <div class="container">
+      <h2 class="section-title">Skills</h2>
+      <div class="skills-grid">
+        <span>Python</span>
+        <span>Machine Learning</span>
+        <span>Deep Learning</span>
+        <span>Data Visualization</span>
+        <span>Philosophy of Mind</span>
+        <span>Behavioral Science</span>
+        <span>SQL</span>
+        <span>Research Writing</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects -->
+  <section id="projects" class="section">
+    <div class="container">
+      <h2 class="section-title">Projects</h2>
+      <div class="projects">
+        <div class="card">
+          <h3>AI Admissions System</h3>
+          <p>Predictive ML pipeline for UK university admissions using Decision Trees, KNN, and Random Forest.</p>
         </div>
-
-        <div class="nav__menu" id="nav-menu">
-          <ul class="nav__list">
-            <li class="nav__item">
-              <a href="#home" class="nav__link active">Home</a>
-            </li>
-            <li class="nav__item">
-              <a href="#about" class="nav__link">About</a>
-            </li>
-            <li class="nav__item">
-              <a href="#skills" class="nav__link">Skills</a>
-            </li>
-            <li class="nav__item">
-              <a href="#hobbies" class="nav__link">Hobbies</a>
-            </li>
-            <li class="nav__item">
-              <a href="./contact.html" class="nav__link">Contact</a>
-            </li>
-          </ul>
+        <div class="card">
+          <h3>Football Intelligence Dashboard</h3>
+          <p>Premier League analytics using xG metrics and performance clustering via RapidMiner and Python.</p>
         </div>
-
-        <div class="nav__toggle" id="nav-toggle">
-          <i class="bx bx-menu"></i>
+        <div class="card">
+          <h3>Philosophy of AI Essays</h3>
+          <p>Writing series bridging neural networks and moral philosophy — the logic and meaning of intelligence.</p>
         </div>
-      </nav>
-    </header>
+      </div>
+    </div>
+  </section>
 
-    <main class="l-main">
-      <!--===== HOME =====-->
-      <section class="home bd-grid" id="home">
-        <div class="home__data">
-          <h1 class="home__title">
-            Hi,<br />I'm <span class="home__title-color">Jeevan Kafle</span
-            ><br />
-            Data Scientist
-          </h1>
-          <a href="./cv.html" class="button">View CV</a>
-          <a href="./contact.html" class="button">View Form</a>
-        </div>
+  <!-- Contact -->
+  <section id="contact" class="section">
+    <div class="container">
+      <h2 class="section-title">Contact</h2>
+      <p>If my ideas resonate with your mission, let’s collaborate.</p>
+      <form class="contact-form" action="https://formspree.io/f/yourformid" method="POST">
+        <input type="text" name="name" placeholder="Name" required>
+        <input type="email" name="_replyto" placeholder="Email" required>
+        <textarea name="message" rows="5" placeholder="Message"></textarea>
+        <button type="submit" class="btn">Send</button>
+      </form>
+    </div>
+  </section>
 
-        <div class="home__social">
-          <a
-            href="https://www.linkedin.com/in/jeevan-kafle-3a453a246/"
-            class="home__social-icon"
-            ><i class="bx bxl-linkedin"></i
-          ></a>
-          <a href="https://github.com/jeevankafle" class="home__social-icon"
-            ><i class="bx bxl-github"></i
-          ></a>
-        </div>
+  <!-- Footer -->
+  <footer class="footer">
+    <p>© 2025 Jeevan Kafle • “The mind that questions itself evolves.”</p>
+  </footer>
 
-        <!-- DISPLAY PICTURE -->
-        <div class="home__img">
-          <!--===== SVG AS BG =====-->
-          <svg class="home__blob" viewBox="0 0 479 467">
-            <mask id="mask0" mask-type="alpha">
-              <path
-                d="M9.19024 145.964C34.0253 76.5814 114.865 54.7299 184.111 29.4823C245.804 6.98884 311.86 -14.9503 370.735 14.143C431.207 44.026 467.948 107.508 477.191 174.311C485.897 237.229 454.931 294.377 416.506 344.954C373.74 401.245 326.068 462.801 255.442 466.189C179.416 469.835 111.552 422.137 65.1576 361.805C17.4835 299.81 -17.1617 219.583 9.19024 145.964Z"
-              />
-            </mask>
-            <g mask="url(#mask0)">
-              <path
-                d="M9.19024 145.964C34.0253 76.5814 114.865 54.7299 184.111 29.4823C245.804 6.98884 311.86 -14.9503 370.735 14.143C431.207 44.026 467.948 107.508 477.191 174.311C485.897 237.229 454.931 294.377 416.506 344.954C373.74 401.245 326.068 462.801 255.442 466.189C179.416 469.835 111.552 422.137 65.1576 361.805C17.4835 299.81 -17.1617 219.583 9.19024 145.964Z"
-              />
-              <image
-                class="home__blob-img"
-                x="50"
-                y="60"
-                href="./assets/img/pp.jpg"
-              />
-            </g>
-          </svg>
-        </div>
-      </section>
-
-      <!--===== ABOUT =====-->
-      <section class="about section" id="about">
-        <h2 class="section-title">About</h2>
-        <div class="about__container bd-grid">
-          <div class="about__img">
-            <img
-              src="assets/img/prefil1.jpg"
-              alt="Here is a image of lens scanning the computer which is showing some graph"
-            />
-          </div>
-
-          <div>
-            <h2 class="about__subtitle">I'm Jeevan</h2>
-            <p class="about__text">
-              Hi, my name is Jeevan Kafle and I am a Web Designer. I am studying
-              Bsc (hons) Information Technology at University of West London. I am adventure loving person who likes to take life as it comes and enjoy in between. I like to work with people of various background and I try to learn something from everybody.<br /><br />
-            </p>
-          </div>
-        </div>
-      </section>
-
-      <!--===== SKILLS =====-->
-      <section class="skills section" id="skills">
-        <h2 class="section-title">Skills</h2>
-
-        <div class="skills__container bd-grid">
-          <div>
-            <h2 class="skills__subtitle">Profesional Skills</h2>
-            <p class="skills__text">
-              Take a look at some of the things I love working on.
-            </p>
-            <div class="skills__data">
-              <div class="skills__names">
-                <!--                                <i class='bx bxl-html5 skills__icon'></i>-->
-                <img
-                  src="https://icon-library.com/images/programming-code-icon/programming-code-icon-5.jpg"
-                  alt="programming"
-                  width="30"
-                  height="40"
-                />&nbsp;
-                <span class="skills__name"
-                  >Programming & Scripting Languages: &nbsp;</span
-                >
-                <a
-                  href="https://en.wikipedia.org/wiki/HTML"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  <img
-                    src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/2048px-HTML5_logo_and_wordmark.svg.png"
-                    alt="HTML"
-                    width="40"
-                    height="40"
-                  />
-                </a>
-                <a
-                  href="https://en.wikipedia.org/wiki/CSS"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  <img
-                    src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/CSS3_logo_and_wordmark.svg/1200px-CSS3_logo_and_wordmark.svg.png"
-                    alt="CSS"
-                    width="30"
-                    height="40"
-                  /> </a
-                >&nbsp;
-                <a
-                  href="https://en.wikipedia.org/wiki/JS"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  <img
-                    src="https://gitlab.schukai.com/uploads/-/system/group/avatar/139/javascript.png"
-                    alt="JS"
-                    width="40"
-                  />
-                </a>
-              </div>
-              <div class="skills__bar skills__html"></div>
-            </div>
-            <div class="skills__data">
-              <div class="skills__names">
-                <img
-                  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTnRW9ooon2t8fhS_SBJfc8XS8nvkS4sveecQ&usqp=CAU"
-                  alt="data"
-                  width="30"
-                  height="40"
-                />&nbsp;
-
-                <span class="skills__name">Data Visualization :&nbsp;</span>
-                <a href="gds" target="_blank" rel="noreferrer">
-                  <img
-                    src="https://www.logo.wine/a/logo/Microsoft_Excel/Microsoft_Excel-Logo.wine.svg"
-                    alt="Excel"
-                    width="64"
-                  />
-                </a>
-              </div>
-              <div class="skills__bar skills__html"></div>
-            </div>
-            <div class="skills__data">
-              <div class="skills__names">
-                <img
-                  src="https://upload.wikimedia.org/wikipedia/commons/4/44/Microsoft_logo.svg"
-                  alt="Microsoft_logo"
-                  width="30"
-                  height="40"
-                />&nbsp;
-                <span class="skills__name">MS Office tools :</span>
-                <a href="" target="_blank" rel="noreferrer">
-                  <img
-                    src="https://www.logo.wine/a/logo/Microsoft_Word/Microsoft_Word-Logo.wine.svg"
-                    alt="word"
-                    width="70"
-                    height="40"
-                  /> </a
-                >&nbsp;
-                <a href="" target="_blank" rel="noreferrer">
-                  <img
-                    src="https://www.logo.wine/a/logo/Microsoft_Excel/Microsoft_Excel-Logo.wine.svg"
-                    alt="excel"
-                    width="40"
-                    height="40"
-                  /> </a
-                >&nbsp;
-                <a href="" target="_blank" rel="noreferrer">
-                  <img
-                    src="https://www.logo.wine/a/logo/Microsoft_PowerPoint/Microsoft_PowerPoint-Logo.wine.svg"
-                    alt="powerpoint"
-                    width="90"
-                    height="40"
-                  />
-                </a>
-              </div>
-              <div class="skills__bar skills__js"></div>
-            </div>
-          </div>
-
-          <div>
-            <img
-              src="assets/img/professional%20skills.gif"
-              alt="skills image"
-              class="skills__img"
-            />
-          </div>
-        </div>
-      </section>
-
-      <!--===== HOBBIES =====-->
-      <section class="skills section" id="hobbies">
-        <h2 class="section-title">Hobbies</h2>
-
-        <div class="skills__container bd-grid">
-          <div>
-            <h2 class="skills__subtitle">Hobbies</h2>
-            <p class="skills__text">
-              Here are the things I enjoy during leisure time.
-            </p>
-            <div class="skills__data">
-              <div class="skills__names">
-                <img
-                  src="https://img.freepik.com/free-vector/cooking-concept-illustration_114360-2683.jpg?w=740&t=st=1682841227~exp=1682841827~hmac=9afc0ad749cd3ecc7f94ff9ddd863e9ddbb0842ea4a16ffc1b4998c2ce5ac753"
-                  alt="cooking image"
-                  width="40"
-                  height="50"
-                />&nbsp;
-                <span class="skills__name">Cooking&nbsp;</span>
-              </div>
-              <div class="skills__bar skills__html"></div>
-            </div>
-            <div class="skills__data">
-              <div class="skills__names">
-                <img
-                  src="https://img.freepik.com/free-vector/realistic-book-lover-composition-with-stack-colorful-books-with-eyeglasses-home-plants-tea-cup-vector-illustration_1284-77312.jpg?w=826&t=st=1682872623~exp=1682873223~hmac=1abcf7a43a236ec4812a8309a548d9aaececb02fc025f654157c6b04e48bf6d4"
-                  alt="books image"
-                  width="40"
-                  height="50"
-                />&nbsp;
-                <span class="skills__name">Reading books &nbsp;</span>
-              </div>
-              <div class="skills__bar skills__html"></div>
-            </div>
-
-            <div class="skills__data">
-              <div class="skills__names">
-                <img
-                  src="https://img.freepik.com/free-vector/vintage-tv_23-2147503075.jpg?w=740&t=st=1682841537~exp=1682842137~hmac=8e5599b6fac2c9d2db8cf0ad01ff0dd113c973c816734b93e35d94f87a018228"
-                  alt="tv image"
-                  width="40"
-                  height="50"
-                />&nbsp;
-                <span class="skills__name">Watching TV series and movies</span>
-              </div>
-              <div class="skills__bar skills__js"></div>
-            </div>
-            <div class="skills__data">
-              <div class="skills__names">
-                <img
-                  src="https://as1.ftcdn.net/v2/jpg/01/26/67/06/1000_F_126670692_3Z6XMzg9RtmT5HEQrYYj07rkzdPws4cm.jpg"
-                  alt="nature image"
-                  width="40"
-                  height="50"
-                />&nbsp;
-                <span class="skills__name"
-                  >Travelling and Exploring the Nature</span
-                >
-              </div>
-              <div class="skills__bar skills__js"></div>
-            </div>
-          </div>
-          <div>
-            <video autoplay controls>
-              <source src="./assets/NEPAL.mp4" alt="a video" />
-              Your browser does not support the video tag.
-            </video>
-          </div>
-        </div>
-      </section>
-    </main>
-
-    <!--===== FOOTER =====-->
-    <footer class="footer">
-      <p class="footer__title">Jeevan Kafle</p>
-      <p class="footer__copy">&#169; Jeevan Kafle. All rights reserved</p>
-    </footer>
-
-    <!--===== MAIN JS =====-->
-    <script src="assets/js/main.js" ></script>
-  </body>
+  <script src="assets/js/main.js"></script>
+</body>
 </html>
